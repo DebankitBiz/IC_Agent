@@ -21,7 +21,7 @@ load_dotenv()
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
 st.set_page_config(page_title="ICAgents Goal Assistant", layout="wide")
-GOAL_DATA_PATH = r"C:\IC Agents\crewai\icagents\Goal Setting sanitized Data.xlsx"
+GOAL_DATA_PATH = r"Goal Setting sanitized Data.xlsx"
 
 
 # Session state init
@@ -525,8 +525,8 @@ if submitted and user_input:
                     
                     
                     # ✅ Load and verify anomalies before calculating goals
-                    sales_df=pd.read_excel("C:\IC Agents\crewai\icagents\Goal Setting sanitized Data.xlsx", sheet_name='Input Sales_Anomaly_Introduced')
-                    fema_df=pd.read_excel("C:\IC Agents\crewai\icagents\ZIP_to_Territory_with_FEMA_Data.xlsx",sheet_name="2025_ZIP_to_Territory")
+                    sales_df=pd.read_excel("Goal Setting sanitized Data.xlsx", sheet_name='Input Sales_Anomaly_Introduced')
+                    fema_df=pd.read_excel("ZIP_to_Territory_with_FEMA_Data.xlsx",sheet_name="2025_ZIP_to_Territory")
                     anomalies_df = detect_product1_anomalies_dynamic(sales_df)
                     verified_anomalies = cross_verify_anomalies_with_fema(anomalies_df, fema_df)
                     

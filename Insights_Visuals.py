@@ -23,7 +23,7 @@ if "Insights_messages" not in st.session_state:
 #     st.session_state.messages = []
 
 def previous_quarter_sales():
-    df = pd.read_excel('C:\IC Agents\crewai\icagents\Goal Setting sanitized Data.xlsx', sheet_name='Input Sales')  # Assuming header starts at row 4
+    df = pd.read_excel('Goal Setting sanitized Data.xlsx', sheet_name='Input Sales')  # Assuming header starts at row 4
 
     # Clean column names
     df.columns = df.columns

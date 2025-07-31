@@ -1,7 +1,0 @@
-streamlit
-pandas
-numpy
-python-dotenv
-anthropic
-plotly
-openpyxl

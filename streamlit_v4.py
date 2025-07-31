@@ -484,7 +484,7 @@ if submitted and user_input:
             else:
                 st.session_state["product_weights_confirmed"] = False
                 bot_response = (
-                "📦 **Based on growth potential**, please confirm product weights "
+                "📦 For goals to be assigned based on growth potential, please confirm product weights "
                 "(e.g., Product 2: 60%, Product 3: 40%). "
                 "**Proceed with the default, or would you like to update them?**"
             )

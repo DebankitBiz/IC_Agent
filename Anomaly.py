@@ -204,11 +204,11 @@ def format_disaster_impact_summary_html(verified_anomalies_df: pd.DataFrame, sal
 
 
 
-sales_df=pd.read_excel("C:\IC Agents\crewai\icagents\Goal Setting sanitized Data.xlsx", sheet_name='Input Sales_Anomaly_Introduced')
-anomalies_df=detect_product1_anomalies_dynamic(sales_df,  -2.0)
-print(anomalies_df)
-fema_df=pd.read_excel("C:\IC Agents\crewai\icagents\ZIP_to_Territory_with_FEMA_Data.xlsx",sheet_name="2025_ZIP_to_Territory")
-cause_df=cross_verify_anomalies_with_fema(anomalies_df, fema_df)
-print(cause_df)
-summary_df=format_disaster_impact_summary_html(cause_df,sales_df)
-print(summary_df)
+#sales_df=pd.read_excel("C:\IC Agents\crewai\icagents\Goal Setting sanitized Data.xlsx", sheet_name='Input Sales_Anomaly_Introduced')
+#anomalies_df=detect_product1_anomalies_dynamic(sales_df,  -2.0)
+#print(anomalies_df)
+#fema_df=pd.read_excel("C:\IC Agents\crewai\icagents\ZIP_to_Territory_with_FEMA_Data.xlsx",sheet_name="2025_ZIP_to_Territory")
+#cause_df=cross_verify_anomalies_with_fema(anomalies_df, fema_df)
+#print(cause_df)
+#summary_df=format_disaster_impact_summary_html(cause_df,sales_df)
+#print(summary_df)
